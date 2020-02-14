@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="30dp"
+
+    tools:context=".AboutUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ExpandableListView
+
+       android:childDivider="@android:color/transparent"
+        android:padding="10dp"
+        android:id="@+id/Explistview"
+        android:layout_width="wrap_content"
+        android:layout_height="378dp"
+        android:addStatesFromChildren="true"
+        android:alwaysDrawnWithCache="false"
+        android:animateLayoutChanges="false"
+        android:animationCache="true"
+        android:backgroundTint="@color/colorAccentDark"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:drawSelectorOnTop="false"
+        android:foregroundGravity="center_vertical"
+        android:paddingRight="16dp"></ExpandableListView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="292dp"
+        android:layout_height="454dp"
+        android:paddingTop="400dp"
+        android:text="TextView" />
+
+</FrameLayout>

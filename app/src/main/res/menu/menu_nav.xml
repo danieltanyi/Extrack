@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_action_home"
+
+        android:title="Home"
+        app:showAsAction="ifRoom"></item>
+
+
+    <item
+        android:id="@+id/Expenses"
+        android:icon="@drawable/expenses"
+        android:title="Expenses"></item>
+
+    <item
+        android:id="@+id/Statistics"
+        android:icon="@drawable/statistics_icon"
+        android:title="Pie Chart"></item>
+
+    <item
+        android:id="@+id/BarChart"
+        android:icon="@drawable/bar_chart"
+        android:title="Bar Chart"></item>
+
+    <item
+        android:title="About Us"
+        android:icon="@drawable/about_icon"
+        android:id="@+id/AboutUs"></item>
+
+</menu>

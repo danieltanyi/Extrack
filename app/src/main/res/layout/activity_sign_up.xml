@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/background">
+    <ImageView
+        android:id="@+id/itemIcon"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="125dp"
+        android:src="@drawable/splash"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView_SignUpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="140dp"
+        android:text="Name"
+        android:textColor="#272727"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_SignUpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="-10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:maxLength="20"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_SignUpName"
+        app:layout_constraintStart_toEndOf="@+id/textView_SignUpName" />
+
+    <TextView
+        android:id="@+id/textView_SignUpEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Email"
+        android:textColor="#272727"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_SignUpName"
+        app:layout_constraintTop_toBottomOf="@+id/textView_SignUpName" />
+
+    <EditText
+        android:id="@+id/editText_SignUpEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="20"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_SignUpEmail"
+        app:layout_constraintStart_toStartOf="@+id/editText_SignUpName" />
+
+    <TextView
+        android:id="@+id/textView_SignUpPswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textColor="#272727"
+        app:layout_constraintStart_toStartOf="@+id/textView_SignUpEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textView_SignUpEmail" />
+
+    <EditText
+        android:id="@+id/editText_SignUpPswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="20"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_SignUpPswd"
+        app:layout_constraintStart_toStartOf="@+id/editText_SignUpEmail" />
+
+    <Button
+        android:id="@+id/button_SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:onClick="signup"
+        android:text="Sign_Up"
+        android:background="@drawable/buttonstyle"
+        android:textSize="18sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_SignUpPswd" />
+
+    <Button
+        android:id="@+id/button_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="cancel"
+        android:text="Cancel"
+        android:textSize="18sp"
+        android:background="@drawable/buttonstyle"
+        app:layout_constraintBottom_toBottomOf="@+id/button_SignUp"
+        app:layout_constraintStart_toEndOf="@+id/button_SignUp" />
+
+</android.support.constraint.ConstraintLayout>
